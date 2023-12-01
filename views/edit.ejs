@@ -1,0 +1,33 @@
+<%- include("header") %>
+
+<div id="main">
+    <%- include("nav") %>
+
+    <div class="addexhero">
+        <div class="fbox">
+            <h2>Update Expense</h2>
+            <form action="/edit/<%= expense._id %>" method="post">
+                <input type="text" placeholder="Title" name="title" value="<%= expense.title %>">
+                <input type="number" placeholder="Amount" name="amount" value="<%= expense.amount %>">
+                <select name="category" value="<%= expense.category %>">
+                    <option value="null" disabled hidden>Category</option>
+                    <option value="home">Home</option>
+                    <option value="travel">Travel</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="food">Food</option>
+                    <option value="others">Others</option>
+                </select>
+                <select name="paymentmood" value="<%= expense.paymentmood %>">
+                    <option value="null" disabled hidden>Payment Mood</option>
+                    <option value="cash">Cash</option>
+                    <option value="online">Online</option>
+                    <option value="check">Check</option>
+                </select>
+                <input type="date" placeholder="Enter Date" name="date" value="<%= expense.date %>">
+                <button class="btn">Update</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+<%- include("footer") %>

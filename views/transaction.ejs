@@ -1,0 +1,53 @@
+<%- include("header")  %>
+
+<div id="main">
+  <%- include("nav") %>
+    
+  <div class="hero">
+    <div class="sidenav">
+        <a href="/home">Dashboard</a>
+        <a href="/category">Category</a>
+        <a href="/transaction">Transaction</a>
+    </div>
+    <div class="sideleft">
+        <h2>Transactions</h2> 
+        <div id="searchbar">
+          <form action="/search">
+            <select name="key" style="border: none; outline: none;">
+              <option value="null" disabled selected hidden>Filter</option>
+              <option value="title">Title</option>
+              <option value="amount">Amount</option>
+              <option value="category">Category</option>
+              <option value="paymentmood">Payment Mode</option>
+              <option value="date">Date</option>
+          </select>
+            <div id="searchbox"><input type="text" name="value" placeholder="enter search term" />
+              <button>Search</button></div>
+        </form>
+        </div>
+        <table >
+            <tr>
+              <th>Title</th>
+              <th>Amount</th>
+              <th>Categoty</th>
+              <th>Payment</th>
+              <th>Date</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <% user.expenses.forEach(function(e){ %>
+                <tr>
+                    <td><%= e.title %></td>
+                    <td><%= e.amount %></td>
+                    <td><%= e.category %></td>
+                    <td><%= e.paymentmood %></td>
+                    <td><%= e.date %></td>
+                    <td> <a  href="/edit/<%= e._id %>">Edit</a></td>
+                    <td> <a  href="/delete/<%= e._id %>">Delete</a></td>
+                </tr>
+            <% }) %>
+          </table>
+    </div>
+  </div>
+</div>
+<%- include("footer")  %>

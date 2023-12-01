@@ -1,0 +1,10 @@
+<%- include("header") %>
+<div id="main">
+    <%- include("nav") %>
+
+    <form class="fgtoptpwd" action="/sendmail" method="post">
+        <input type="email" placeholder="Enter registerd email" name="email"> 
+        <button class="btn " >send code</button>
+    </form>
+</div>
+<%- include("footer") %>

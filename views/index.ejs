@@ -1,0 +1,21 @@
+<%- include('header') %>
+<div id="main">
+  <%- include("nav") %>
+
+  <div class="formbox">
+    <form id="register" action="/register" method="post">
+      <h2>Register</h2>
+      <label class="regl" for="email">Email</label>
+      <input id="email" type="email" placeholder="Email Address" name="email">
+      <label class="regl" for="username">Username</label>
+      <input id="username" type="username" placeholder="Username" name="username">
+      <label class="regl" for="password">Password</label>
+      <input id="password" type="password" placeholder="Create Password" name="password">
+      <button class="btn">Register</button>
+    </form>
+    <p>Already have an account? 
+      <a href="/login">Login</a>
+    </p>
+  </div>
+</div>
+<%- include('footer') %>

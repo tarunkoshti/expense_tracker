@@ -1,0 +1,33 @@
+<%- include("header") %>
+
+<div id="main">
+    <%- include("nav") %>
+
+    <div class="addexhero">
+        <div class="fbox">
+            <h2>Add New Expense</h2>
+            <form action="/addexpense" method="post">
+                <input type="text" placeholder="Title" name="title">
+                <input type="number" placeholder="Amount" name="amount">
+                <select name="category">
+                    <option value="null" disabled selected hidden>Category</option>
+                    <option value="home">Home</option>
+                    <option value="travel">Travel</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="food">Food</option>
+                    <option value="others">Others</option>
+                </select>
+                <select name="paymentmood" >
+                    <option value="null" disabled selected hidden>Payment Mood</option>
+                    <option value="cash">Cash</option>
+                    <option value="online">Online</option>
+                    <option value="check">Check</option>
+                </select>
+                <input type="date" placeholder="Enter Date" name="date">
+                <button class="btn">Add</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+<%- include("footer") %>

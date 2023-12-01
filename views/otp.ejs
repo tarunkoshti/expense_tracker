@@ -1,0 +1,18 @@
+<%- include("header")%>
+<!--  -->
+<div id="main">
+    <%- include("nav") %>
+    
+
+    <h1>Forget Password</h1>
+
+   <form class="fgtoptpwd" action="/match-otp/<%= email%>" method="POST">
+    <input type="text" placeholder="Enter OTP" name="otp" />
+    <button class="btn">Confirm</button>
+    </form>
+</div>
+
+<!--  -->
+
+<!--  -->
+<%- include("footer")%>

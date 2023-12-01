@@ -1,0 +1,11 @@
+<%- include("header") %>
+<div id="main">
+    <%- include("nav") %>
+
+    <form class="fgtoptpwd" action="/reset" method="post">
+        <input type="password" name="oldpassword" placeholder="Enter Old Password" />
+    <input type="password" name="newpassword" placeholder="Enter New Password" />
+    <button class="btn">Reset</button>
+    </form>
+</div>
+<%- include("footer") %>

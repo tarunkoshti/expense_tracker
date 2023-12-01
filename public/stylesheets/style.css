@@ -1,0 +1,299 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: gilroy;
+}
+html,body
+{
+height: 100%;
+width: 100%;
+}
+
+* a{
+  color: white;
+  text-decoration: none;
+}
+
+.btn
+{
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4482EC;
+  margin-top: 10px;
+  color: white;
+}
+
+input
+{
+  width: 100%;
+  outline: none;
+  border: .5px solid gray;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#main
+{
+  height: 100vh;
+  width: 100%;
+  /* background-image: url(../images/bg__backgroundscene.png); */
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+}
+
+#main #nav
+{
+  padding: 8px 20px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main #nav h1{
+  color: white;
+}
+
+#main .formbox
+{
+  min-height: 60vh;
+  width: 350px;
+  background-color: white;
+  /* box-shadow: .5px .5px 15px rgb(187, 186, 186); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#main .formbox h2{
+  font-size: 2rem;
+  text-align: center;
+}
+
+#main .formbox p a
+{
+  color: blue;
+}
+
+#main .formbox #forget
+{
+  color: blue;
+}
+
+#main #register
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#main #register .regl
+{
+  cursor: pointer;
+}
+
+#main .fgtoptpwd
+{
+  width: 300px;
+  min-height: 25vh;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#main .fgtoptpwd .btn{
+  width: 50%;
+  
+}
+
+
+/* home */
+
+.hero
+{
+  width: 100%;
+  height: calc(100% - 47px);
+  display: flex;
+  
+}
+
+.hero .sidenav
+{
+  padding: 20px 5px;
+  width: 20%;
+  height: 100%;
+  background-color: lightseagreen; 
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .sidenav a
+{
+  padding: 10px 20px;
+}
+
+.hero .sidenav a:hover
+{
+  background-color: lightgray;
+}
+
+.hero .sideleft
+{
+  padding: 20px 20px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.hero .sideleft #searchbar
+{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 20%;
+  /* background-color: red; */
+}
+
+.hero .sideleft #searchbar select
+{
+  width: 100%;
+}
+
+.hero .sideleft #searchbar input
+{
+  width: 70%;
+  border-radius:5px;
+  border: 1px solid lightgray;
+} 
+
+.hero .sideleft #searchbar button
+{
+  padding: 10px 10px;
+  background-color: lightseagreen;
+  border-radius: 5px;
+  border: none;
+}
+
+.hero .sideleft #searchbar #searchbox
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.hero .sideleft table
+{
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  /* background-color: lightgray; */
+}
+
+.hero .sideleft table tr:first-child
+{
+  height: 40px;
+  background-color: lightgray;
+}
+
+.hero .sideleft table tr
+{
+  margin-top: 10px;
+}
+
+.hero .sideleft table td
+{
+  width: 15%;
+  padding: 10px 0;
+  padding-left: 5px;
+  /* background-color: lightgray; */
+}
+
+.hero .sideleft table td a
+{
+  padding: 5px 10px;
+  background-color: lightseagreen;
+  border-radius: 5px;
+}
+
+.hero .sideleft table th
+{
+  text-align: left;
+  padding-left: 5px;
+}
+
+.addexhero
+{
+  width: 100%;
+  min-height: calc(100% - 47px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addexhero .fbox
+{
+  width: 350px;
+  height: 60vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.addexhero .fbox h2
+{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.addexhero .fbox form
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: center; */
+  /* gap: 5%; */
+}
+
+.addexhero .fbox form select
+{
+  width: 100%;
+  outline: none;
+  border: .5px solid gray;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.addexhero .fbox form select option{
+  background-color: lightgray;
+}
+
+
+
+
+
+
